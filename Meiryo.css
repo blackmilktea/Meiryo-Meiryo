@@ -1,0 +1,16 @@
+/*日本語*/
+
+html[lang="ja"] body,
+html[lang="ja"] body *,
+body[lang="ja"] * {
+    font-family: "Meiryo", "メイリオ", "Trebuchet MS", "Arial", "Helvetica" !important;
+}
+
+
+/*日本語でない*/
+
+html:not([lang="ja"]) body,
+html:not([lang="ja"]) body *,
+body:not([lang="ja"]) * {
+    font-family: "Trebuchet MS", "Arial", "Helvetica" !important;
+}

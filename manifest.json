@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Meiryo Meiryo",
+  "description": "htmlもしくはbody要素のlang属性にjaが指定してあればスタイルシートでフォントをメイリオにします。",
+  "version": "1.0.0",
+  "content_scripts": [{
+    "matches": [
+      "https://*/*",
+      "http://*/*",
+      "file:///*/*"
+    ],
+    "css": ["Meiryo.css"],
+    "run_at": "document_start"
+  }],
+  "permissions": []
+}
